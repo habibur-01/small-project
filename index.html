@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>small project</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <style>
+            .header-text{
+                background: linear-gradient(to right,rgb(6, 182, 212 ),#3B82F6);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+            #review{
+                background: linear-gradient(to right,rgb(6, 182, 212 ),#3B82F6);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                
+            }
+            .text{
+                margin-top: 10px;
+                
+            }
+        </style>
+    </head>
+    <body class="h-screen bg-red-100 ">
+        <header></header>
+        <main>
+            <div class="w-3/5 m-auto flex justify-center h-screen items-center">
+                <div class="py-6">
+                    <h1 class="header-text text-3xl font-bold">Take a comment from
+                        users--</h1>
+                    <div class="mt-10 text-right">
+                        <textarea name id="text-area" placeholder="Give your feedback" cols="30" rows="10" class="border-2 border-black pl-2 h-28 w-3/4"></textarea><br><br>
+                        <P class="text-right"><button id="submit-btn" class="btn btn-primary  px-5">Submit</button></P>
+                    </div>
+                    <div id="user-review" class="mt-14">
+                        <h3 id="review" class="text-3xl font-bold">User Review_ _</h3>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer></footer>
+        <script src="2ndsmallproject.js"></script>
+    </body>
+</html>
